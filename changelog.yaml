@@ -30,3 +30,17 @@ databaseChangeLog:
         - dropColumn:
             tableName: users
             columnName: second_email
+  - changeSet:
+      id: add-duplicate-column
+      author: harness-lab
+      changes:
+        - addColumn:
+            tableName: users
+            columns:
+              - column:
+                  name: id
+                  type: int
+      rollback:
+        - sql:
+            comment: This is a no-op rollback for the invalid column addition.
+            sql: SELECT 1;
