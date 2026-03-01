@@ -14,3 +14,19 @@ databaseChangeLog:
         - dropColumn:
             tableName: vendors
             columnName: is_active
+  - changeSet:
+      id: add-second-email-column
+      author: harness-lab
+      changes:
+        - addColumn:
+            tableName: users
+            columns:
+              - column:
+                  name: second_email
+                  type: varchar(255)
+                  constraints:
+                    nullable: true
+      rollback:
+        - dropColumn:
+            tableName: users
+            columnName: second_email
