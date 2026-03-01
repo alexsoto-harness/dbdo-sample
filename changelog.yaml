@@ -30,3 +30,9 @@ databaseChangeLog:
         - dropColumn:
             tableName: users
             columnName: second_email
+  - changeSet:
+      id: drop-transactions-table
+      author: harness-lab
+      changes:
+        - sql:
+            sql: DROP TABLE transactions;
