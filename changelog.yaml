@@ -31,7 +31,7 @@ databaseChangeLog:
             tableName: users
             columnName: second_email
   - changeSet:
-      id: drop-transactions-table
+      id: cleanup-drop-transactions
       author: harness-lab
       changes:
         - sql:
