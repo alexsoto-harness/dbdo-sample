@@ -30,4 +30,19 @@ databaseChangeLog:
         - dropColumn:
             tableName: users
             columnName: second_email
-
+  - changeSet:
+      id: add-vendor-phone
+      author: harness-lab
+      changes:
+        - addColumn:
+            tableName: vendors
+            columns:
+              - column:
+                  name: phone
+                  type: varchar(20)
+                  constraints:
+                    nullable: true
+      rollback:
+        - dropColumn:
+            tableName: vendors
+            columnName: phone
