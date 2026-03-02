@@ -30,12 +30,4 @@ databaseChangeLog:
         - dropColumn:
             tableName: users
             columnName: second_email
-  - changeSet:
-      id: cleanup-drop-transactions
-      author: harness-lab
-      changes:
-        - sql:
-            sql: DROP TABLE transactions;
-      rollback:
-        - sql:
-            sql: SELECT 1;
+
