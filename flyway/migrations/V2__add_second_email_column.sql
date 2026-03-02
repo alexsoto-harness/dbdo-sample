@@ -1,1 +1,2 @@
 ALTER TABLE users ADD COLUMN second_email VARCHAR(255);
+
