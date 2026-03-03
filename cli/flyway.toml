@@ -6,6 +6,14 @@ cleanDisabled = true
 baselineOnMigrate = true
 baselineVersion = "0"
 
-[environments.default]
+[environments.Build]
 url = "jdbc:postgresql://cli-postgres-db1.db-lab.svc.cluster.local:5432/mydb"
+user = "admin"
+
+[environments.Test]
+url = "jdbc:postgresql://cli-postgres-db2.db-lab.svc.cluster.local:5432/mydb"
+user = "admin"
+
+[environments.Prod]
+url = "jdbc:postgresql://cli-postgres-db3.db-lab.svc.cluster.local:5432/mydb"
 user = "admin"
