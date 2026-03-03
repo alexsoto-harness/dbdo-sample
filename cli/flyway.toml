@@ -4,7 +4,7 @@ defaultSchema = "public"
 validateMigrationNaming = true
 cleanDisabled = true
 baselineOnMigrate = true
-baselineVersion = "0"
+baselineVersion = "-1"
 
 [environments.Build]
 url = "jdbc:postgresql://cli-postgres-db1.db-lab.svc.cluster.local:5432/mydb"
