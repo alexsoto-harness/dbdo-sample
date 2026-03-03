@@ -9,6 +9,7 @@ baselineVersion = "-1"
 [environments.Build]
 url = "jdbc:postgresql://cli-postgres-db1.db-lab.svc.cluster.local:5432/mydb"
 user = "admin"
+provisioner = "clean"
 
 [environments.Test]
 url = "jdbc:postgresql://cli-postgres-db2.db-lab.svc.cluster.local:5432/mydb"
