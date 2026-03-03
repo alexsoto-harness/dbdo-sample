@@ -1,0 +1,11 @@
+[flyway]
+locations = ["filesystem:migrations"]
+defaultSchema = "public"
+validateMigrationNaming = true
+cleanDisabled = true
+baselineOnMigrate = true
+baselineVersion = "0"
+
+[environments.default]
+url = "jdbc:postgresql://cli-postgres-db1.db-lab.svc.cluster.local:5432/mydb"
+user = "admin"
