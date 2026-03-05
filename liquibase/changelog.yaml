@@ -46,3 +46,6 @@ databaseChangeLog:
         - dropColumn:
             tableName: vendors
             columnName: phone
+  - include:
+      file: create_parcels_table.sql
+      relativeToChangelogFile: true            
