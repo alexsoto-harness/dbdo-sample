@@ -48,4 +48,7 @@ databaseChangeLog:
             columnName: phone
   - include:
       file: create_parcels_table.sql
-      relativeToChangelogFile: true            
+      relativeToChangelogFile: true
+  - include:
+      file: create_admins_table.sql
+      relativeToChangelogFile: true         
